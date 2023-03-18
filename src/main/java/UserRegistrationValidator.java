@@ -36,4 +36,12 @@ public class UserRegistrationValidator {
             System.out.println("Invalid Mobile No");
         return result;
     }
+    public boolean validatePassword(String password) {
+        boolean result = Pattern.compile("^(?=.*[A-Z])(?=.*[0-9])(?=.*[~!@#$%&*+])([~!@#$%&*+]?[A-Za-z0-9]){7,}$").matcher(password).matches();
+        if (result == true)
+            System.out.println("Valid Password");
+        else
+            System.out.println("Invalid Password");
+        return result;
+    }
 }

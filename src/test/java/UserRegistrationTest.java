@@ -61,4 +61,27 @@ public class UserRegistrationTest {
         UserRegistrationValidator userRegistrationValidator = new UserRegistrationValidator();
         assertFalse(userRegistrationValidator.validateMobileNumber("917978058968"));
     }
+    @Test
+    public void givenPassWord_WhenShort_ShouldReturnFalse() {
+        UserRegistrationValidator userRegistrationValidator = new UserRegistrationValidator();
+        assertFalse(userRegistrationValidator.validatePassword("Dev@25"));
+    }
+
+    @Test
+    public void givenPassword_WhenNotHavingAtLeastOneUpperCaseLetter_ShouldReturnFalse() {
+        UserRegistrationValidator userRegistrationValidator = new UserRegistrationValidator();
+        assertFalse(userRegistrationValidator.validatePassword("debabrata@25"));
+    }
+
+    @Test
+    public void givenPassword_WhenNotHavingAtLeastOneNumber_ShouldReturnFalse() {
+        UserRegistrationValidator userRegistrationValidator = new UserRegistrationValidator();
+        assertFalse(userRegistrationValidator.validatePassword("Debabrata@sahoo"));
+    }
+
+    @Test
+    public void givenPassword_WhenProper_ShouldReturnTrue() {
+        UserRegistrationValidator userRegistrationValidator = new UserRegistrationValidator();
+        Assert.assertTrue(userRegistrationValidator.validatePassword("Deba@9at"));
+    }
 }
