@@ -50,4 +50,15 @@ public class UserRegistrationTest {
         UserRegistrationValidator userRegistrationValidator = new UserRegistrationValidator();
         assertFalse(userRegistrationValidator.validateEmail("deba.brat@bl.co."));
     }
+    @Test
+    public void givenMobileNumber_WhenShort_ShouldReturnFalse() {
+        UserRegistrationValidator userRegistrationValidator = new UserRegistrationValidator();
+        assertFalse(userRegistrationValidator.validateMobileNumber("91 78058968"));
+    }
+
+    @Test
+    public void givenMobileNumber_WhenNotProper_ShouldReturnFalse() {
+        UserRegistrationValidator userRegistrationValidator = new UserRegistrationValidator();
+        assertFalse(userRegistrationValidator.validateMobileNumber("917978058968"));
+    }
 }

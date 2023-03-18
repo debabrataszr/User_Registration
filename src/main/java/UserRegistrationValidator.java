@@ -27,5 +27,13 @@ public class UserRegistrationValidator {
             System.out.println("Invalid Email");
         return result;
     }
-}
 
+    public boolean validateMobileNumber(String mobileNo) {
+        boolean result = Pattern.compile("^(91)[\\s][0-9]{10}$").matcher(mobileNo).matches();
+        if (result == true)
+            System.out.println("Valid Mobile No");
+        else
+            System.out.println("Invalid Mobile No");
+        return result;
+    }
+}
