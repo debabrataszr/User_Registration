@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="009a5c1b-b57c-4df5-a268-1a13e2f3a9c8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserRegistrationValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserRegistrationValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/UserRegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserRegistrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +50,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.UserRegistrationTest.givenValidEmailSamples_WhenProper_ShouldReturnTrue">
+  <component name="RunManager" selected="JUnit.UserRegistrationTest.givenSentence_WhenContainsSad_ShouldPassTest">
     <configuration name="UserRegistrationTest.givenInvalidEmailSamples_WhenProper_ShouldReturnFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="User-Registaration" />
       <option name="PACKAGE_NAME" value="" />
@@ -70,11 +71,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserRegistrationTest.givenPassword_WhenProper_ShouldReturnTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserRegistrationTest.givenSentence_WhenContainsSad_ShouldPassTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="User-Registaration" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="UserRegistrationTest" />
-      <option name="METHOD_NAME" value="givenPassword_WhenProper_ShouldReturnTrue" />
+      <option name="METHOD_NAME" value="givenSentence_WhenContainsSad_ShouldPassTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -102,11 +103,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserRegistrationTest.givenSentence_WhenContainsSad_ShouldPassTest" />
         <item itemvalue="JUnit.UserRegistrationTest.givenValidEmailSamples_WhenProper_ShouldReturnTrue" />
         <item itemvalue="JUnit.UserRegistrationTest.givenInvalidEmailSamples_WhenProper_ShouldReturnFalse" />
         <item itemvalue="JUnit.UserRegistrationTest.givenValidEmailSamples_WhenTested_ShouldReturnTrue" />
         <item itemvalue="JUnit.UserRegistrationTest.givenInvalidEmailSamples_WhenTested_ShouldReturnFalse" />
-        <item itemvalue="JUnit.UserRegistrationTest.givenPassword_WhenProper_ShouldReturnTrue" />
       </list>
     </recent_temporary>
   </component>

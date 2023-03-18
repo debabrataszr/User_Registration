@@ -99,4 +99,10 @@ public class UserRegistrationTest {
         }
     }
 
+    @Test
+    public void givenSentence_WhenContainsSad_ShouldPassTest() {
+        UserRegistrationValidator userRegistrationValidator = new UserRegistrationValidator();
+        Assert.assertEquals("sad",userRegistrationValidator.analyseMood("This is a sad message"));
+        System.out.println("sad");
+    }
 }

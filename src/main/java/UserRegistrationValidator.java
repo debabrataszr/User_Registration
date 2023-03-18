@@ -44,4 +44,13 @@ public class UserRegistrationValidator {
             System.out.println("Invalid Password");
         return result;
     }
-}
+
+
+        public String analyseMood(String mood) {
+            if (mood.contains("sad"))
+                return "sad";
+            else
+            return "happy";
+        }
+    }
+
