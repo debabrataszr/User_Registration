@@ -7,7 +7,16 @@ public class UserRegistrationValidator {
             System.out.println("Valid first name");
         else
             System.out.println("Invalid first name");
-     return result;
+        return result;
     }
 
-}
+        public boolean validateLastName(String lastName){
+            boolean result = Pattern.compile("^[A-Z][a-z]{2,}").matcher(lastName).matches();
+            if (result == true)
+                System.out.println("Valid last name");
+            else
+                System.out.println("Invalid last name");
+            return result;
+        }
+    }
+
