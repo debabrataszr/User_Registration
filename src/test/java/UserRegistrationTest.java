@@ -39,4 +39,15 @@ public class UserRegistrationTest {
         UserRegistrationValidator userRegistrationValidator = new UserRegistrationValidator();
         assertFalse(userRegistrationValidator.validateLastName("sahoo"));
     }
+    @Test
+    public void givenEmail_WhenProper_ShouldReturnTrue() {
+        UserRegistrationValidator userRegistrationValidator = new UserRegistrationValidator();
+        Assert.assertTrue(userRegistrationValidator.validateEmail("debabrat.a@bl.co.in"));
+    }
+
+    @Test
+    public void givenEmail_WhenNotProper_ShouldReturnFalse() {
+        UserRegistrationValidator userRegistrationValidator = new UserRegistrationValidator();
+        assertFalse(userRegistrationValidator.validateEmail("deba.brat@bl.co."));
+    }
 }
