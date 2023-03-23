@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="009a5c1b-b57c-4df5-a268-1a13e2f3a9c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/UserRegistrationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/IUserValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UserRegistrationValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserRegistrationValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ParameterizedEmailTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ParameterizedEmailTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UserRegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserRegistrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +19,7 @@
       <list>
         <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -67,7 +65,17 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserRegistrationTest">
+  <component name="RunManager" selected="JUnit.ParameterizedEmailTest.givenEmail_WhenTested_ShouldPassAsExpected">
+    <configuration name="ParameterizedEmailTest.givenEmail_WhenTested_ShouldPassAsExpected" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="User-Registaration" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ParameterizedEmailTest" />
+      <option name="METHOD_NAME" value="givenEmail_WhenTested_ShouldPassAsExpected" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserRegistrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="User-Registaration" />
       <option name="PACKAGE_NAME" value="" />
@@ -107,23 +115,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserRegistrationTest.givenMobileNumber_WhenNull_ShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="User-Registaration" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UserRegistrationTest" />
-      <option name="METHOD_NAME" value="givenMobileNumber_WhenNull_ShouldThrowException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ParameterizedEmailTest.givenEmail_WhenTested_ShouldPassAsExpected" />
         <item itemvalue="JUnit.UserRegistrationTest" />
         <item itemvalue="JUnit.UserRegistrationTest.givenFirstName_WhenFirstLetterIsNotCapital_ShouldReturnFalse" />
         <item itemvalue="JUnit.UserRegistrationTest.givenFirstName_WhenShort_ShouldReturnFalse" />
         <item itemvalue="JUnit.UserRegistrationTest.givenMobileNumber_WhenEmpty_ShouldThrowException" />
-        <item itemvalue="JUnit.UserRegistrationTest.givenMobileNumber_WhenNull_ShouldThrowException" />
       </list>
     </recent_temporary>
   </component>
