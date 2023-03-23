@@ -1,7 +1,8 @@
+import org.example.UserRegistrationException;
+
 import java.util.regex.Pattern;
 
 public class UserRegistrationValidator {
-
 
 
     public boolean validateFirstName(String name) {
@@ -9,7 +10,8 @@ public class UserRegistrationValidator {
         if (result == true)
             System.out.println("Valid first name");
         else
-            System.out.println("Invalid first name");
+            throw new UserRegistrationException("Invalid first name", UserRegistrationException.ExceptionType.ENTERED_EMPTY);
+
         return result;
     }
 
@@ -39,6 +41,7 @@ public class UserRegistrationValidator {
             System.out.println("Invalid Mobile No");
         return result;
     }
+
     public boolean validatePassword(String password) {
         boolean result = Pattern.compile("^(?=.*[A-Z])(?=.*[0-9])(?=.*[~!@#$%&*-+])[A-Za-z0-9~!@#$%&*-+]{8,}").matcher(password).matches();
         if (result == true)
@@ -48,13 +51,5 @@ public class UserRegistrationValidator {
         return result;
     }
 
-
-        public String analyseMood(String mood) {
-            if (mood.contains("sad"))
-                return "sad";
-            else
-            return "happy";
-        }
-
-    }
+}
 

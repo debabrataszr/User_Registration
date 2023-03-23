@@ -1,3 +1,4 @@
+import org.example.UserRegistrationException;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -29,7 +30,7 @@ public class ParameterizedEmailTest {
     }
 
     @Test
-    public void givenEmail_WhenTested_ShouldPassAsExpected() {
+    public void givenEmail_WhenTested_ShouldPassAsExpected() throws UserRegistrationException {
         UserRegistrationValidator userRegistrationValidator = new UserRegistrationValidator();
         boolean result =userRegistrationValidator.validateEmail(this.emailToTest);
         Assert.assertEquals(this.expectedResult, result);
